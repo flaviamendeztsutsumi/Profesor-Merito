@@ -82,7 +82,7 @@ public class Interfaz implements Serializable {
 
             try {
                 int opcion = sc.nextInt();
-                sc.nextLine(); // Consume la nueva línea después del número
+                sc.nextLine(); 
 
                 if (opcion == 1) {
                     System.out.print("Introduzca el impacto del artículo: ");
@@ -99,7 +99,7 @@ public class Interfaz implements Serializable {
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Error: Ingresa un valor numérico válido.");
-                sc.nextLine(); // Limpia el buffer del scanner
+                sc.nextLine(); 
             }
         }
     }
@@ -146,6 +146,7 @@ public class Interfaz implements Serializable {
                 mostrarProfesores();
             } else if ("5".equals(opcion)) {
                 continuar = grabar();
+                continuar = false;
             } else {
                 System.out.println("Opción incorrecta.");
             }

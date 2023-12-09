@@ -13,6 +13,6 @@ public class Articulo extends Merito {
         return impacto;
     }
     public String toString() {
-        return super.toString() + " | Impacto: " + impacto;
+        return super.toString() + " \nImpacto: " + impacto;
     }
 }
