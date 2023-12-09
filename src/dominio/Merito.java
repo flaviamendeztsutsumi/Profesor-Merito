@@ -28,5 +28,5 @@ public abstract class Merito implements Serializable {
     {
         return "Merito: " + titulo + "\nvaloración" + valorar();
     }
-    
+   
 }
