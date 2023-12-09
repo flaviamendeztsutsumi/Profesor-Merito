@@ -13,6 +13,13 @@ public  class Articulo extends Merito {
     public Double valorar(){
         return impacto;
     }
+
+    public String toString()
+    {   
+
+        return super.toString() + "Impacto: " + impacto;
+    }
+    
     
 
     

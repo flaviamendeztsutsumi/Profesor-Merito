@@ -2,7 +2,7 @@ package dominio;
 
 public class ProfesorTitular extends Profesor{
     
-    /////constructor////
+
     public ProfesorTitular(String nombre) {
         super(nombre);
     }

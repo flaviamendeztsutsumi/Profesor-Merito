@@ -1,11 +1,16 @@
 package dominio;
 
+import java.io.Serializable;
+import java.util.ArrayList;
 
-public abstract class Merito {
+public abstract class Merito implements Serializable {
     protected String titulo;
+    private ArrayList <Merito> meritos;
+
 
     public Merito(String titulo){
         this.titulo = titulo;
+        meritos = new ArrayList<>();
     }
 
     public void  setTitulo(String titulo)
@@ -18,5 +23,10 @@ public abstract class Merito {
     }
 
     public abstract Double valorar();
+
+    public String toString()
+    {
+        return "Merito: " + titulo + "\nvaloración" + valorar();
+    }
     
 }

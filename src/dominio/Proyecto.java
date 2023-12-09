@@ -15,4 +15,11 @@ public class Proyecto  extends Merito{
     }
 
     
+    public String toString()
+    {   
+
+        return super.toString() + "Finaciación: " + financiacion;
+    }
+
+    
 }
