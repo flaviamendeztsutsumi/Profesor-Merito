@@ -1,5 +1,6 @@
 package dominio;
 
+
 public class Articulo extends Merito {
 
     protected double impacto;

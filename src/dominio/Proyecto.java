@@ -1,6 +1,6 @@
 package dominio;
 
-public class Proyecto  extends Merito{
+public class Proyecto  extends Merito {
 
     protected double financiacion;
 

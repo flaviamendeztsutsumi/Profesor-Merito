@@ -1,12 +1,14 @@
 package dominio;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public abstract class Profesor {
+public abstract class Profesor implements Serializable{
     protected ArrayList<Merito> meritos = new ArrayList<>();
     protected String nombre;
 
-    public Profesor(String nombre) {
+    public Profesor(String nombre) 
+    {
         this.nombre = nombre;
     }
 
@@ -22,15 +24,13 @@ public abstract class Profesor {
         return this.nombre.equals(p.nombre);
     }
 
-    public String toString() {
-        StringBuilder result = new StringBuilder("Nombre: " + nombre + "\nMeritos:\n");
-        for (Merito m : meritos) {
-            result.append(m.toString()).append("\n");
+    public String toString(){
+        return "Nombre: " + nombre +"\n Meritos: " + meritos;
         }
-        return result.toString();
+
+    public Object getNombre() {
+        return null;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
+   
 }

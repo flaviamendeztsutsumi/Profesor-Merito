@@ -1,17 +1,19 @@
 package dominio;
 
-import java.io.Serializable;
 
-public class Catedratico extends Profesor implements Serializable {
+public class Catedratico extends Profesor  
+{
 
-    public Catedratico(String nombre) {
+    public Catedratico(String nombre) 
+    {
         super(nombre);
     }
 
-    @Override
-    public double calcularValoracion() {
+    public double calcularValoracion() 
+    {
         double suma = 0;
-        for (Merito m : meritos) {
+        for (Merito m : meritos) 
+        {
             suma += Math.pow(m.valorar(), 2);
         }
 

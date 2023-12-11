@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public abstract class Merito implements Serializable {
     protected String titulo;
-    private ArrayList <Merito> meritos;
+    public ArrayList <Merito> meritos;
 
 
     public Merito(String titulo){

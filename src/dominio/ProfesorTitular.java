@@ -1,8 +1,7 @@
 package dominio;
 
-import java.io.Serializable;
 
-public class ProfesorTitular extends Profesor implements Serializable {
+public class ProfesorTitular extends Profesor {
 
     public ProfesorTitular(String nombre) {
         super(nombre);
@@ -14,7 +13,6 @@ public class ProfesorTitular extends Profesor implements Serializable {
         for (Merito m : meritos) {
             suma += Math.pow(m.valorar(), 2);
         }
-
         return Math.pow(suma / 4, 0.5);
     }
 }
